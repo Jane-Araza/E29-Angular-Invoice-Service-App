@@ -1,0 +1,26 @@
+<div class="table">
+    <table>
+      <tr>
+        <th>Description</th>
+        <th>Quantity</th>
+        <th>Unit price</th>
+        <th>Total price</th>
+      </tr>
+      <tr *ngFor="let invoice of invoices">
+        <td  id="item">{{invoice.description}}</td>
+        <td>{{invoice.quantity}}</td>
+        <td>P {{invoice.unitPrice}}.00<td>
+        P {{invoice.totalPrice}}.00
+      </tr>
+    </table>
+   <hr>
+   <table id="subtotal">
+    <tr>
+     <td>Notes: </td>
+     <div class="row"> 
+        <div class="col-12"><h1>₱ {{totalPrice}}.00</h1></div>
+     </div>
+     <td id="sub"><span id="total"></span> </td> 
+     </tr>
+   </table>
+  </div>

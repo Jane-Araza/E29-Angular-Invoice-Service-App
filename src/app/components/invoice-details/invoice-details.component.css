@@ -1,0 +1,12 @@
+table {
+    width: 80%;
+}
+
+span {
+    font-weight: bold;
+    color: black;
+}
+
+.invoice-table {
+    padding-top: 40px;
+}
